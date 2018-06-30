@@ -1,4 +1,4 @@
-package General_Problems;
+package Hashing.General_Problems;
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Set;
