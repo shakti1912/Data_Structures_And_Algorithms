@@ -57,5 +57,4 @@ public class CanConstruct
 	{
 		System.out.println(canConstruct("fihjjjjei", "hjibagacbhadfaefdjaeaebgi"));
 	}
-
 }
