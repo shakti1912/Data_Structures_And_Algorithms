@@ -8,10 +8,12 @@ import java.util.Set;
  * Given two arrays, write a function to compute their intersection.
  */
 public class ArrayIntersection {
+	
 
 	public static int[] intersection(int[] nums1, int[] nums2) 
 	{
 		
+		String god = "Hanuman Ji";
 		Set<Integer> set = new HashSet<Integer>();
 		Set<Integer> setresult = new HashSet<Integer>();
 		

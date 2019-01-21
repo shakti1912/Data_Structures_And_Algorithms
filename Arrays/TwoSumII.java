@@ -17,8 +17,6 @@ public class TwoSumII
 	public static int[] twoSum(int[] numbers, int target)
 	{
 		int[] res = new int[2];
-		int index1 = -1;
-		int index2 = -1;
 		
 		LinkedHashMap<Integer, int[]> map = new LinkedHashMap<Integer, int[]>();
 		for(int i=0; i < numbers.length; i++)
