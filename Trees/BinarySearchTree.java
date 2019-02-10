@@ -8,20 +8,11 @@ public class BinarySearchTree
 	{
 		root = null;
 	}
-	/*
-	 * Inorder traversal prints bst in increasing order.
-	 * Time: O(n)
-	 */
-	public void inorderTraversal(BSTNode r)
-	{
-		if(r == null)
-		{
-			return;
-		}
-		inorderTraversal(r.left);			//print left subtree
-		System.out.print(r.data + " ");		// print node
-		inorderTraversal(r.right);			//print right subtree
-	}	
+	
+	/**************************************
+	 *             Seach Methods
+	 **************************************/
+	
 	/*
 	 * search for an element recursively. 
 	 * Time: O(h) where h is the height of  tree.
@@ -38,6 +29,7 @@ public class BinarySearchTree
 		}
 		return search(r.right, x);
 	}
+	
 	/*
 	 *search for an element iteratively. 
 	 * Time: O(h) where h is the height of  tree. 
@@ -61,6 +53,61 @@ public class BinarySearchTree
 		}
 		throw new NoSuchElementException("Element not found");
 	}
+	
+	/************************************
+	 *       Different Traversals
+	 ************************************/
+	
+	/*
+	 * Inorder traversal prints bst in increasing order.
+	 * Time: O(n)
+	 */
+	public void inOrderTraversal(BSTNode r)
+	{
+		if(r == null)
+		{
+			return;
+		}
+		inOrderTraversal(r.left);			//print left subtree
+		System.out.print(r.data + " ");		// print node
+		inOrderTraversal(r.right);			//print right subtree
+	}	
+	
+	/*
+	 * Preorder traversal.
+	 * Time: O(n)
+	 */
+	public void preOrderTraversal(BSTNode r)
+	{
+		if(r == null)
+		{
+			return;
+		}
+		
+		System.out.print(r.data + " ");		// print node
+		preOrderTraversal(r.left);			//print left subtree
+		preOrderTraversal(r.right);			//print right subtree
+	}	
+	
+	/*
+	 * Postorder traversal.
+	 * Time: O(n)
+	 */
+	public void postOrderTraversal(BSTNode r)
+	{
+		if(r == null)
+		{
+			return;
+		}
+		postOrderTraversal(r.left);			//print left subtree
+		postOrderTraversal(r.right);			//print right subtree
+		System.out.print(r.data + " ");		// print node
+	}	
+	
+	/******************************************
+	 *       Minimum && Maximum Methods
+	 ******************************************/
+	
 	/*
 	 * find minimum node in the tree.
 	 * Time: O(h)
@@ -95,6 +142,8 @@ public class BinarySearchTree
 		}
 		return maximum(r.right);
 	}
+	
+	
 	/*
 	 * Find successor of the given node.
 	 */
