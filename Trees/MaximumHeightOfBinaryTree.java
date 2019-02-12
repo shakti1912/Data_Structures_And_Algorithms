@@ -47,6 +47,8 @@ public class MaximumHeightOfBinaryTree
 	/*
 	 * Height of a tree iteratively
 	 * Time Complexity: O(n)
+	 * Approach: Use Level Order traversal. When go one level down, increment height. 
+	 * 			 One thing to take care of is: how to know when we are done with a certain level.
 	 */
 	public static int height(Node root)
 	{
