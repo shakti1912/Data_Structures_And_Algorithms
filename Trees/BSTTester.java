@@ -4,17 +4,22 @@ public class BSTTester
 {	
 	public static void main(String[] args)
 	{
-		searchTester();
+		//searchTester();
 		BinarySearchTree tree = tree();
-		BSTNode min = tree.minimum(tree.root);
-		System.out.println("Minimum node in the tree : "  + min.data);
-		BSTNode max = tree.maximum(tree.root);
-		System.out.println("Maximum node in the tree : "  + max.data);
-		BSTNode n = tree.insert(9);
-		tree.insert(4);
-		tree.insertRecursive(tree.root,1);
-		tree.delete(n);
-		tree.inorderTraversal(tree.root);
+//		BSTNode min = tree.minimum(tree.root);
+//		System.out.println("Minimum node in the tree : "  + min.data);
+//		BSTNode max = tree.maximum(tree.root);
+//		System.out.println("Maximum node in the tree : "  + max.data);
+//		BSTNode n = tree.insert(9);
+//		tree.insert(4);
+//		tree.insertRecursive(tree.root,1);
+//		tree.delete(n);
+		System.out.println("Inroder traversal ");
+		tree.inOrderTraversal(tree.root);
+		System.out.println();
+		System.out.println("Level Order traversal ");
+		
+		tree.levelOrderTraversal(tree.root);
 
 	}
 
